@@ -194,7 +194,7 @@ printTitle "Tiempo que tomó Actulizacion"
 echo "$((($(date +%s)-$TIME_START)/60)) min."
 clear
 msg -bar2
-echo -e "\033[93m           -- ACTULIZACION CASI COMPLETA -- "
+echo -e "\033[93m            = ACTULIZACION CASI COMPLETA = "
 echo -e "\033[97m  SU VPS SE REINICIARA PARA FINALIZAR ACTULIZACIONES"
 msg -bar2
 echo -e "\033[93m               DESPUES DEL REINICIO" 
