@@ -21,7 +21,7 @@ AZUL='\e[34m' && MAGENTA='\e[35m' && MAG='\033[1;36m' &&NEGRITO='\e[1m' && SEMCO
 
 clear
  msg -bar2
- msg -ama "     [ VPS - MX - SCRIPT \033[1;97m ❌ MOD By @Kalix1 ❌\033[1;33m ]"
+ msg -ama "     [ VPS - MX - SCRIPT \033[1;97m ❌ MOD By @TEST ❌\033[1;33m ]"
  echo -e  "\033[1;97m               EJECUTANDO ACTULIZADOR  \033[1;34m "
  msg -bar2
 ## Script name
@@ -40,13 +40,13 @@ if [ ! -d "$INSTALL_DIR" ]; then
 	sleep 2
 	mkdir -p "$INSTALL_DIR_PARENT"
 	cd "$INSTALL_DIR_PARENT"
-    wget https://raw.githubusercontent.com/rudi9999/VPS-MX-8.0/master/zzupdate-master/zzupdate.default.conf -O /usr/local/vpsmxup/vpsmxup.default.conf  &> /dev/null
+    wget https://raw.githubusercontent.com/Waldo60/ocho/master/zzupdate-master/zzupdate.default.conf -O /usr/local/vpsmxup/vpsmxup.default.conf  &> /dev/null
 	#chmod +x /usr/local/vpsmxup/vpsmxup.default.conf 
 	rm -rf /usr/local/vpsmxup/vpsmxup.sh
-    wget https://raw.githubusercontent.com/rudi9999/VPS-MX-8.0/master/zzupdate-master/zzupdate.sh -O /usr/local/vpsmxup/vpsmxup.sh &> /dev/null
+    wget https://raw.githubusercontent.com/Waldo60/ocho/master/zzupdate-master/zzupdate.sh -O /usr/local/vpsmxup/vpsmxup.sh &> /dev/null
 	chmod +x /usr/local/vpsmxup/vpsmxup.sh
 	rm -rf /usr/bin/vpsmxup
-    wget https://raw.githubusercontent.com/rudi9999/VPS-MX-8.0/master/zzupdate-master/zzupdate.sh -O /usr/bin/vpsmxup &> /dev/null
+    wget https://raw.githubusercontent.com/Waldo60/ocho/master/zzupdate-master/zzupdate.sh -O /usr/bin/vpsmxup &> /dev/null
 	chmod +x /usr/bin/vpsmxup
 	echo -e  "\033[1;97m              Copiando Instalador Interno "
 	
@@ -59,12 +59,12 @@ else
 fi
 
 ubu16_fun () {
-    wget -O /etc/apt/sources.list https://github.com/rudi9999/VPS-MX-8.1/raw/master/Repositorios/16.04/sources.list &> /dev/null
+    wget -O /etc/apt/sources.list https://github.com/Waldo60/ocho/raw/master/Repositorios/16.04/sources.list &> /dev/null
 	echo -e "\033[1;97m SELECCIONO UBU 16"
 }
 
 ubu18_fun () {
-    wget -O /etc/apt/sources.list https://github.com/rudi9999/VPS-MX-8.1/raw/master/Repositorios/18.04/sources.list &> /dev/null
+    wget -O /etc/apt/sources.list https://github.com/Waldo60/ocho/raw/master/Repositorios/18.04/sources.list &> /dev/null
 	echo -e "\033[1;97m OK UBU 18"
 }	
 
@@ -73,7 +73,7 @@ otro_fun () {
 	echo "OK OTRO"
 }
 
-	echo -e "\033[1;97m           ---- QUE UBUNTU ESTA USANDO ----"
+	echo -e "\033[1;97m             = QUE UBUNTU ESTA USANDO = "
 	echo -e "\033[1;97m  Digite solo el numero segun su respuesta: "
     msg -bar
     echo -e "\033[1;97m Escoja la opcion deseada."
@@ -98,7 +98,7 @@ otro_fun () {
 	
 sleep 3
 
-wget https://raw.githubusercontent.com/rudi9999/VPS-MX-8.0/master/VPS-MX.sh -O /usr/bin/VPS-MX &> /dev/null
+wget https://raw.githubusercontent.com/Waldo60/ocho/master/VPS-MX.sh -O /usr/bin/VPS-MX &> /dev/null
 chmod +x /usr/bin/VPS-MX
 
 ## Restore working directory
