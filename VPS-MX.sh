@@ -194,7 +194,7 @@ function_verify () {
 }
 funcao_idioma () {
 msg -bar2
-figlet "    -VPS MX-" | lolcat 
+figlet "    =VPS MX=" | lolcat 
 echo -e "     ESTE SCRIPT ESTA OPTIMIZADO A IDIOMA ESPAÑOL"
 msg -bar2
 pv="$(echo es)"
