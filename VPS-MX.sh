@@ -180,18 +180,18 @@ MIP=$(ip addr | grep 'inet' | grep -v inet6 | grep -vE '127\.[0-9]{1,3}\.[0-9]{1
 MIP2=$(wget -qO- ipv4.icanhazip.com)
 [[ "$MIP" != "$MIP2" ]] && IP="$MIP2" || IP="$MIP"
 }  
-function_verify () {
-  permited=$(curl -sSL "https://raw.githubusercontent.com/Waldo60/ocho/master/Control-IP")
-  [[ $(echo $permited|grep "${IP}") = "" ]] && {
-  echo -e "\n\n\n\033[1;95m======================================================\n ¡ESTA KEY NO CONCUERDA CON EL INSTALADOR!,CONATACTE A @Test\n======================================================\n"
-  [[ -d /etc/newadm ]] && rm -rf /etc/newadm
-  exit 1
-  } || {
-  ### INTALAR VERCION DE SCRIPT
-  v1=$(curl -sSL "https://raw.githubusercontent.com/Waldo60/ocho/master/Vercion")
-  echo "$v1" > /etc/versin_script
-  }
-}
+#function_verify () {
+#  permited=$(curl -sSL "https://raw.githubusercontent.com/Waldo60/ocho/master/Control-IP")
+#  [[ $(echo $permited|grep "${IP}") = "" ]] && {
+#  echo -e "\n\n\n\033[1;95m======================================================\n ¡ESTA KEY NO CONCUERDA CON EL INSTALADOR!,CONATACTE A @Test\n======================================================\n"
+#  [[ -d /etc/newadm ]] && rm -rf /etc/newadm
+#  exit 1
+#  } || {
+#  ### INTALAR VERCION DE SCRIPT
+#  v1=$(curl -sSL "https://raw.githubusercontent.com/Waldo60/ocho/master/Vercion")
+#  echo "$v1" > /etc/versin_script
+#  }
+#}
 funcao_idioma () {
 msg -bar2
 figlet "    =VPS MX=" | lolcat 
@@ -332,7 +332,7 @@ chmod +x /bin/monitor.sh
 wget -O /var/www/html/estilos.css https://raw.githubusercontent.com/Waldo60/ocho/master/ArchivosUtilitarios/Monitor-Service/estilos.css &> /dev/null
 msg -bar2
 msg -bar2
-msg -ama "     [ VPS - MX - SCRIPT \033[1;97m ❌ MOD By @Kalix1 ❌\033[1;33m ]"
+msg -ama "     [ VPS - MX - SCRIPT \033[1;97m ❌ MOD By @Test ❌\033[1;33m ]"
 msg -ama "  \033[1;96m      🔰Usar Ubuntu 18 a 64 De Preferencia🔰 "
 msg -bar2
 [[ $1 = "" ]] && funcao_idioma || {
@@ -361,7 +361,7 @@ wget -O $HOME/lista-arq $(ofus "$Key")/$IP > /dev/null 2>&1 && echo -e "\033[1;3
    }
 IP=$(ofus "$Key" | grep -vE '127\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}' | grep -o -E '[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}') && echo "$IP" > /usr/bin/vendor_code
 sleep 1s
-function_verify
+#function_verify
 updatedb
 if [[ -e $HOME/lista-arq ]] && [[ ! $(cat $HOME/lista-arq|grep "KEY INVALIDA!") ]]; then
    msg -bar2
