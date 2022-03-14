@@ -200,11 +200,11 @@ msg -bar2
 echo -e "\033[93m               DESPUES DEL REINICIO" 
 echo -e "\033[93m                 DIGITE LA PALABRA\033[97m"
 echo ""
-echo -e "                  \033[1;41m sudo VPS-MX \033[0m"
+echo -e "                  \033[1;41m sudo VPS-BO \033[0m"
 msg -bar2
 
 REBOOT=1
-REBOOT_TIMEOUT=20
+REBOOT_TIMEOUT=5
 
 if [ "$REBOOT" = "1" ]; then
 	printTitle "        SU VPS SE REINICIARA EN 20 SEGUNDOS           "
