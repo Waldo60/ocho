@@ -350,7 +350,7 @@ msg -bar2 && msg -verm "#¡Key Invalida#! " && msg -bar2
 exit 1
 }
 while [[ ! $Key ]]; do
-msg -bar2 && msg -ne "# DIGITE LA KEY #: " && read Key
+msg -bar2 && msg -ne "# INGRESE SU KEY #: " && read Key
 tput cuu1 && tput dl1
 done
 msg -ne "# Verificando Key # : "
@@ -366,7 +366,7 @@ sleep 1s
 updatedb
 if [[ -e $HOME/lista-arq ]] && [[ ! $(cat $HOME/lista-arq|grep "KEY INVALIDA!") ]]; then
    msg -bar2
-   msg -verd "$(source trans -b es:${id} " INSTALANDO"|sed -e 's/[^a-z -]//ig'): \033[1;31m[VPS-MX #MOD by @Kalix1]"
+   msg -verd "$(source trans -b es:${id} " INSTALANDO"|sed -e 's/[^a-z -]//ig'): \033[1;31m[VPS-MX #MOD by @test]"
    REQUEST=$(ofus "$Key"|cut -d'/' -f2)
    [[ ! -d ${SCPinstal} ]] && mkdir ${SCPinstal}
    pontos="."
