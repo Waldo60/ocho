@@ -222,16 +222,11 @@ echo "exit 0" >> /etc/rc.local
 /bin/cp /etc/skel/.bashrc ~/
 echo 'clear' >> .bashrc
 echo 'echo ""' >> .bashrc
-echo 'echo -e "\033[0;49;96m      __     ______  ____        ___    ____    " '>> .bashrc
-echo 'echo -e "\033[0;49;96m      \ \   / /  _ \/ ___|      / - \  |  -  \  " '>> .bashrc
-echo 'echo -e "\033[0;49;97m       \ \ / /| |_) \___ \ \033[0;49;93m___ \033[0;49;97m/ /_\ \ | |_) |  " '>> .bashrc
-echo 'echo -e "\033[0;49;97m        \ V / |  __/ ___) \033[0;49;93m|___\033[0;49;97m/  ___  \|  -  \  " '>> .bashrc
-echo 'echo -e "\033[0;49;96m         \_/  |_|   |____/   /_/     \_|_|  \_\ " '>> .bashrc
-#echo 'echo -e "\033[91m      __     ______  ____        __  ____  __ " '>> .bashrc
-#echo 'echo -e "\033[91m      \ \   / /  _ \/ ___|      |  \/  \ \/ / " '>> .bashrc
-#echo 'echo -e "\033[91m       \ \ / /| |_) \___ \ _____| |\/| |\  /  " '>> .bashrc
-#echo 'echo -e "\033[91m        \ V / |  __/ ___) |_____| |  | |/  \  " '>> .bashrc
-#echo 'echo -e "\033[91m         \_/  |_|   |____/      |_|  |_/_/\_\ " '>> .bashrc
+echo 'echo -e "\033[91m      __     ______  ____        ____   _____  " '>> .bashrc
+echo 'echo -e "\033[91m      \ \   / /  _ \/ ___|      |  _  \|  _  | " '>> .bashrc
+echo 'echo -e "\033[91m       \ \ / /| |_) \___ \ _____| |_) /| | | | " '>> .bashrc
+echo 'echo -e "\033[91m        \ V / |  __/ ___) |_____| |_) || |_| | " '>> .bashrc
+echo 'echo -e "\033[91m         \_/  |_|   |____/      |_____/|_____| " '>> .bashrc
 echo 'echo "" '>> .bashrc
 echo 'figlet -w 85 -f smslant "ADM BOLIVIA" | lolcat ' >> .bashrc
 echo 'mess1="$(less /etc/newadm/message.txt)" ' >> .bashrc
