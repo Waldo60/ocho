@@ -233,7 +233,7 @@ echo 'echo -e "\033[0;49;96m         \_/  |_|   |____/   /_/     \_|_|  \_\ " '>
 #echo 'echo -e "\033[91m        \ V / |  __/ ___) |_____| |  | |/  \  " '>> .bashrc
 #echo 'echo -e "\033[91m         \_/  |_|   |____/      |_|  |_/_/\_\ " '>> .bashrc
 echo 'echo "" '>> .bashrc
-figlet -w 85 -f smslant "ADM BOLIVIA" | lolcat >> .bashrc
+echo 'figlet -w 85 -f smslant "ADM BOLIVIA" | lolcat ' >> .bashrc
 echo 'mess1="$(less /etc/newadm/message.txt)" ' >> .bashrc
 echo 'echo "" '>> .bashrc
 echo 'echo -e "\033[92m        RESELLER : $mess1 "'>> .bashrc
