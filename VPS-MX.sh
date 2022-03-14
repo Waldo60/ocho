@@ -194,7 +194,7 @@ MIP2=$(wget -qO- ipv4.icanhazip.com)
 #}
 funcao_idioma () {
 msg -bar2
-figlet "    =VPS MX=" | lolcat 
+figlet "    =VPS BO=" | lolcat 
 echo -e "     ESTE SCRIPT ESTA OPTIMIZADO A IDIOMA ESPAÑOL"
 msg -bar2
 pv="$(echo es)"
@@ -233,6 +233,7 @@ echo 'echo -e "\033[0;49;96m         \_/  |_|   |____/   /_/     \_|_|  \_\ " '>
 #echo 'echo -e "\033[91m        \ V / |  __/ ___) |_____| |  | |/  \  " '>> .bashrc
 #echo 'echo -e "\033[91m         \_/  |_|   |____/      |_|  |_/_/\_\ " '>> .bashrc
 echo 'echo "" '>> .bashrc
+figlet -w 85 smslant "ADM BOLIVIA" | lolcat
 echo 'mess1="$(less /etc/newadm/message.txt)" ' >> .bashrc
 echo 'echo "" '>> .bashrc
 echo 'echo -e "\033[92m        RESELLER : $mess1 "'>> .bashrc
