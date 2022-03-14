@@ -1,7 +1,7 @@
 #!/bin/bash
 
 rm -rf /etc/localtime &>/dev/null
-ln -s /usr/share/zoneinfo/America/Argentina/Tucuman /etc/localtime &>/dev/null
+ln -s /usr/share/zoneinfo/America/Bolivia/La_Paz /etc/localtime &>/dev/null
 rm $(pwd)/$0 &> /dev/null
 
 ### COLORES Y BARRA 
@@ -98,8 +98,8 @@ otro_fun () {
 	
 sleep 3
 
-wget https://raw.githubusercontent.com/Waldo60/ocho/master/VPS-MX.sh -O /usr/bin/VPS-MX &> /dev/null
-chmod +x /usr/bin/VPS-MX
+wget https://raw.githubusercontent.com/Waldo60/ocho/master/VPS-MX.sh -O /usr/bin/VPS-BO &> /dev/null
+chmod +x /usr/bin/VPS-BO
 
 ## Restore working directory
 cd $WORKING_DIR_ORIGINAL
