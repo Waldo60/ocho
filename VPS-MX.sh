@@ -180,21 +180,21 @@ MIP=$(ip addr | grep 'inet' | grep -v inet6 | grep -vE '127\.[0-9]{1,3}\.[0-9]{1
 MIP2=$(wget -qO- ipv4.icanhazip.com)
 [[ "$MIP" != "$MIP2" ]] && IP="$MIP2" || IP="$MIP"
 }  
-#function_verify () {
-#  permited=$(curl -sSL "https://raw.githubusercontent.com/Waldo60/ocho/master/Control-IP")
-#  [[ $(echo $permited|grep "${IP}") = "" ]] && {
-#  echo -e "\n\n\n\033[1;95m======================================================\n ¡ESTA KEY NO CONCUERDA CON EL INSTALADOR!,CONATACTE A @Test\n======================================================\n"
-#  [[ -d /etc/newadm ]] && rm -rf /etc/newadm
-#  exit 1
-#  } || {
-#  ### INTALAR VERCION DE SCRIPT
-#  v1=$(curl -sSL "https://raw.githubusercontent.com/Waldo60/ocho/master/Vercion")
-#  echo "$v1" > /etc/versin_script
-#  }
-#}
+function_verify () {
+  permited=$(curl -sSL "https://raw.githubusercontent.com/Waldo60/ocho/master/Control-IP")
+  [[ $(echo $permited|grep "${IP}") = "" ]] && {
+  echo -e "\n\n\n\033[1;95m======================================================\n ¡ESTA KEY NO CONCUERDA CON EL INSTALADOR!,CONATACTE A @Test\n======================================================\n"
+  [[ -d /etc/newadm ]] && rm -rf /etc/newadm
+  exit 1
+  } || {
+  ### INTALAR VERCION DE SCRIPT
+  v1=$(curl -sSL "https://raw.githubusercontent.com/Waldo60/ocho/master/Vercion")
+  echo "$v1" > /etc/versin_script
+  }
+}
 funcao_idioma () {
 msg -bar2
-figlet "    =VPS BO=" | lolcat 
+figlet "    =VPS abc=" | lolcat 
 echo -e "     ESTE SCRIPT ESTA OPTIMIZADO A IDIOMA ESPAÑOL"
 msg -bar2
 pv="$(echo es)"
