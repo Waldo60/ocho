@@ -194,7 +194,7 @@ function_verify () {
 }
 funcao_idioma () {
 msg -bar2
-figlet "    =VPS abc=" | lolcat 
+figlet "    -VPS abc-" | lolcat 
 echo -e "     ESTE SCRIPT ESTA OPTIMIZADO A IDIOMA ESPAÑOL"
 msg -bar2
 pv="$(echo es)"
@@ -222,13 +222,13 @@ echo "exit 0" >> /etc/rc.local
 /bin/cp /etc/skel/.bashrc ~/
 echo 'clear' >> .bashrc
 echo 'echo ""' >> .bashrc
-echo 'echo -e "\033[91m      __     ______  ____        ____   _____  " '>> .bashrc
-echo 'echo -e "\033[91m      \ \   / /  _ \/ ___|      |  _  \|  _  | " '>> .bashrc
+echo 'echo -e "\033[91m      __     ______  ____        ____   _   _  " '>> .bashrc
+echo 'echo -e "\033[91m      \ \   / /  _ \/ ___|      |  _  \| | | | " '>> .bashrc
 echo 'echo -e "\033[91m       \ \ / /| |_) \___ \ _____| |_) /| | | | " '>> .bashrc
 echo 'echo -e "\033[91m        \ V / |  __/ ___) |_____| |_) || |_| | " '>> .bashrc
 echo 'echo -e "\033[91m         \_/  |_|   |____/      |_____/|_____| " '>> .bashrc
 echo 'echo "" '>> .bashrc
-echo 'figlet -w 85 -f smslant "ADM BOLIVIA" | lolcat ' >> .bashrc
+#echo 'figlet -w 85 -f smslant "ADM Boom" | lolcat ' >> .bashrc
 echo 'mess1="$(less /etc/newadm/message.txt)" ' >> .bashrc
 echo 'echo "" '>> .bashrc
 echo 'echo -e "\033[92m        RESELLER : $mess1 "'>> .bashrc
