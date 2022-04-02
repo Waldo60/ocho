@@ -200,7 +200,7 @@ msg -bar2
 echo -e "\033[93m               DESPUES DEL REINICIO" 
 echo -e "\033[93m                 DIGITE LA PALABRA\033[97m"
 echo ""
-echo -e "                  \033[1;41m sudo VPS-BO \033[0m"
+echo -e "                  \033[1;41m sudo VPS-mx\033[0m"
 msg -bar2
 
 REBOOT=1
