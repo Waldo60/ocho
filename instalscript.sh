@@ -1,7 +1,7 @@
 #!/bin/bash
 
 rm -rf /etc/localtime &>/dev/null
-ln -s /usr/share/zoneinfo/America/Bolivia/La_Paz /etc/localtime &>/dev/null
+ln -s /usr/share/zoneinfo/America// /etc/localtime &>/dev/null
 rm $(pwd)/$0 &> /dev/null
 
 ### COLORES Y BARRA 
