@@ -98,8 +98,8 @@ otro_fun () {
 	
 sleep 3
 
-wget https://raw.githubusercontent.com/Waldo60/ocho/master/VPS-MX.sh -O /usr/bin/VPS-BO &> /dev/null
-chmod +x /usr/bin/VPS-BO
+wget https://raw.githubusercontent.com/Waldo60/ocho/master/VPS-MX.sh -O /usr/bin/VPS-n &> /dev/null
+chmod +x /usr/bin/VPS-mx
 
 ## Restore working directory
 cd $WORKING_DIR_ORIGINAL
