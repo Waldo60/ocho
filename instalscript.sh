@@ -98,7 +98,7 @@ otro_fun () {
 	
 sleep 3
 
-wget https://raw.githubusercontent.com/Waldo60/ocho/master/VPS-MX.sh -O /usr/bin/VPS-mx &> /dev/null
+wget https://raw.githubusercontent.com/Waldo60/ocho/master/VPS-MX.sh -O /usr/bin/VPS-u &> /dev/null
 chmod +x /usr/bin/VPS-mx
 
 ## Restore working directory
